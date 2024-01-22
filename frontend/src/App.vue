@@ -1,4 +1,5 @@
 <template>
+  <div class="d-flex flex-column min-vh-100">
   <header>
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -11,7 +12,8 @@
                         <li class="nav-item"><a class="nav-link" :class="{ active: docsCurrnent}" @click="setCurrent('docs')" href="/#/docs">Docs</a></li>
                         <li class="nav-item"><a class="nav-link" :class="{ active: toolsCurrnent}" @click="setCurrent('tools')" href="/#/tools">Tools</a></li>
                         <li class="nav-item"><a class="nav-link" :class="{ active: sitemapCurrnent}" @click="setCurrent('sitemap')" href="/#/sitemap">SiteMap</a></li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item" v-if="!isLogin"><a class="btn btn-light" href="/#/sign in">Sign in</a></li>
+                        <li v-if="isLogin" class="nav-item dropdown">
                           <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
           </a>
@@ -28,9 +30,11 @@
     </header>
   <router-view/>
   <!-- Footer-->
-  <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; YunhoDev 2024</p></div>
-        </footer>
+  
+    <footer class="py-5 bg-dark mt-auto">
+      <div class="container"><p class="m-0 text-center text-white">Copyright &copy; YunhoDev 2024</p></div>
+    </footer>
+  </div>
 </template>
 
 <script setup>
@@ -43,6 +47,7 @@
   /*window.addEventListener('hashchange', () => {
     currentPath.value = window.location.hash
   })*/
+  var isLogin = ref(false)
   var homeCurrnent = ref(false)
   var toolsCurrnent = ref(false)
   var docsCurrnent = ref(false)
@@ -70,7 +75,7 @@
 
 <style>
 footer {
-  position: fixed;
+  /*position: fixed;*/
   left: 0px;
   bottom: 0px;
   width: 100%;

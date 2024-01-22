@@ -4,7 +4,7 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 */
-module.exports = { 
+module.exports = { /*
   devServer: {
     proxy: { 
       '/api': { 
@@ -16,5 +16,6 @@ module.exports = {
       } 
     } 
   },
-  outputDir: '../backend/public',
+  outputDir: '../backend/public',*/
+  publicPath: process.env.NODE_ENV === "production" ? "/" : "/",
 }

@@ -36,6 +36,11 @@ const routes = [
     component: () => import('../views/ProfileView.vue')
   },
   {
+    path: '/sign%20in',
+    name: 'sign in',
+    component: () => import('../views/SignInView.vue')
+  },
+  {
     path: '/:pathMatch(.*)',
     name: '404',
     component: () => import('../views/NotFoundView.vue')
