@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkfrontend"]=self["webpackChunkfrontend"]||[]).push([[767],{767:function(e,n,r){r.r(n),r.d(n,{default:function(){return f}});var t=r(252);const s={class:"py-5 bg-light border-bottom mb-4"},c=(0,t._)("div",{class:"container"},[(0,t._)("div",{class:"text-center my-5"},[(0,t._)("h1",{class:"fw-bolder"},"Profile"),(0,t._)("p",{class:"lead mb-0"},"사용자 정보")])],-1),a=[c];function o(e,n){return(0,t.wg)(),(0,t.iD)("div",s,a)}var l=r(744);const d={},i=(0,l.Z)(d,[["render",o]]);var f=i}}]);
-//# sourceMappingURL=767.789ff8ab.js.map
