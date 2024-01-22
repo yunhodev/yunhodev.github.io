@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfrontend"]=self["webpackChunkfrontend"]||[]).push([[74],{74:function(e,n,r){r.r(n),r.d(n,{default:function(){return u}});var t=r(252);const s={class:"py-5 bg-light border-bottom mb-4"},c=(0,t._)("div",{class:"container"},[(0,t._)("div",{class:"text-center my-5"},[(0,t._)("h1",{class:"fw-bolder"},"Site Map"),(0,t._)("p",{class:"lead mb-0"},"WordPress 사이트와 OWASP Juice Shop")])],-1),a=[c];function o(e,n){return(0,t.wg)(),(0,t.iD)("div",s,a)}var d=r(744);const i={},l=(0,d.Z)(i,[["render",o]]);var u=l}}]);
+//# sourceMappingURL=74.c7a8b22d.js.map
