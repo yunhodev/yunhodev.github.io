@@ -12,7 +12,7 @@
                         <li class="nav-item"><a class="nav-link" :class="{ active: docsCurrnent}" @click="setCurrent('docs')" href="/#/docs">Docs</a></li>
                         <li class="nav-item"><a class="nav-link" :class="{ active: toolsCurrnent}" @click="setCurrent('tools')" href="/#/tools">Tools</a></li>
                         <li class="nav-item"><a class="nav-link" :class="{ active: sitemapCurrnent}" @click="setCurrent('sitemap')" href="/#/sitemap">SiteMap</a></li>
-                        <li class="nav-item" v-if="!isLogin"><a class="btn btn-light" href="/#/sign in">Sign in</a></li>
+                        <li class="nav-item" @click="setCurrent('other')" v-if="!isLogin"><a class="btn btn-light" href="/#/sign%20in">Sign in</a></li>
                         <li v-if="isLogin" class="nav-item dropdown">
                           <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
